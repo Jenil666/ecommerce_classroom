@@ -111,7 +111,7 @@ class _HomepageState extends State<Homepage> {
                      onTap: (){
                        if(e.key==0)
                          {
-                           Navigator.pushNamed(context, 'de',arguments: AirpodsPro);
+                           Navigator.pushNamed(context, 'p1');
                          }
                      },
                   child: con(i[e.key], inf[e.key], pr[e.key])))
