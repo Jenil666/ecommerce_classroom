@@ -1,26 +1,26 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-class P1 extends StatefulWidget {
-  const P1({Key? key}) : super(key: key);
+class P5 extends StatefulWidget {
+  const P5({Key? key}) : super(key: key);
 
   @override
-  State<P1> createState() => _P1State();
+  State<P5> createState() => _P5State();
 }
 
-class _P1State extends State<P1> {
+class _P5State extends State<P5> {
 
-  int i =1;
+  int i = 1;
   @override
   Widget build(BuildContext context) {
     return SafeArea(child: Scaffold(
       backgroundColor: Colors.grey.shade200,
-      appBar: AppBar(title: Text("Airpode pro",style: TextStyle(color: Colors.white),),centerTitle: true,),
+      appBar: AppBar(title: Text("Iphone 14 pro",style: TextStyle(color: Colors.white),),centerTitle: true,),
       body: Column(
         children: [
           Expanded(flex:2,child: Container(
             alignment: Alignment.center,
-            child: Image.asset("assets/images/airpodspro.png",height: 1000,width: 1000,),
+            child: Image.asset("assets/images/14promax.jpg",height: 1000,width: 1000,),
           )),
           Expanded(flex:3,child: Container(
             width: double.infinity,
@@ -49,11 +49,14 @@ class _P1State extends State<P1> {
                 ),
                 SizedBox(height: 15,),
                 Container(
-                  padding: EdgeInsets.only(left: 20,right: 10),
-                    child: Text("You get 360 degree Special Audio.\n9mm Drivers to provi dynameic sound range.\nPer pod you get 6hr of battery life and with case 30 hr of battery life.\nSupports 20w of wired charging and 15w of wieless charging.",style: TextStyle(color: Colors.black45),)),
+                    height: 115,
+                    width: double.infinity,
+                    padding: EdgeInsets.only(left: 20,right: 10),
+                    child: Text("12+12+48 Rear Camera Set up.A16 Bionic chip with 16 Bellion tranistors.New Ios 16.Brand new Dynamic.Industry Leading Video quality.6x Optical Zoom with sensor shieft technology for stabilization."
+                        "island",style: TextStyle(color: Colors.black45),)),
                 SizedBox(height: 10,),
                 Container(
-                  padding: EdgeInsets.all(20),
+                    padding: EdgeInsets.all(20),
                     alignment: Alignment.centerLeft,
                     child: Text("Quantity",style: TextStyle(fontSize: 15,color: Colors.black,fontWeight: FontWeight.bold),)),
                 Row(
@@ -67,11 +70,11 @@ class _P1State extends State<P1> {
                           InkWell(
                             onTap: (){
                               if(i>1)
-                                {
-                                  setState(() {
-                                    i--;
-                                  });
-                                }
+                              {
+                                setState(() {
+                                  i--;
+                                });
+                              }
                             },
                             child: Container(
                               height: 50,
@@ -91,11 +94,11 @@ class _P1State extends State<P1> {
                           InkWell(
                             onTap: (){
                               if(i<5)
-                                {
-                                  setState(() {
-                                    i++;
-                                  });
-                                }
+                              {
+                                setState(() {
+                                  i++;
+                                });
+                              }
                             },
                             child: Container(
                               height: 50,
@@ -122,7 +125,7 @@ class _P1State extends State<P1> {
                 Row(
                   children: [
                     SizedBox(width: 20,),
-                    Text("\$${159*i}.00",style: TextStyle(fontSize: 30,color: Colors.blue),),
+                    Text("\$${999*i}.00",style: TextStyle(fontSize: 30,color: Colors.blue),),
                     Expanded(child: SizedBox(height: 30,)),
                     Container(
                       margin: EdgeInsets.only(right: 10),
@@ -147,3 +150,4 @@ class _P1State extends State<P1> {
     );
   }
 }
+
