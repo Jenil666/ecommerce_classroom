@@ -12,7 +12,7 @@ class _HomepageState extends State<Homepage> {
   @override
   List l1 = [0, 0, 0, 0, 0, 0],
       i = [
-        "assets/images/airpods.jpg",
+        "assets/images/airpodspro.png",
         "assets/images/airpods1.jpg",
         "assets/images/airpodsmax.jpg",
         "assets/images/apple watch ultra.jpg",
@@ -104,10 +104,7 @@ class _HomepageState extends State<Homepage> {
             scrollDirection: Axis.horizontal,
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceAround,
-              children: l1
-                  .asMap()
-                  .entries
-                  .map((e) => InkWell(
+              children: l1.asMap().entries.map((e) => InkWell(
                      onTap: (){
                        if(e.key==0)
                          {
@@ -126,27 +123,50 @@ class _HomepageState extends State<Homepage> {
   Widget con(String m1, String i1, String p) {
     return Container(
       margin: EdgeInsets.only(left: 5, right: 5),
-      height: 250,
-      width: 150,
+      height: 450,
+      width: 250,
       child: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
         children: [
+          SizedBox(height: 10,),
+          Row(
+            children: [
+              SizedBox(width: 10,),
+            Text("💙️",style: TextStyle(color: Colors.blue,fontSize: 25),),
+              Expanded(child: SizedBox(height: 1,)),
+              Icon(Icons.shopping_bag_outlined,color: Colors.blue,size: 35,),
+              SizedBox(width: 10,),
+            ],),
           Image.asset(
             m1,
             height: 200,
-            width: 130,
-          ),
-          SizedBox(
-            height: 10,
-          ),
-          Text(
-            "$i1",
-            style: TextStyle(color: Colors.black, fontSize: 15),
+            width: 230,
           ),
           Text(
             "$p",
-            style: TextStyle(color: Colors.black, fontSize: 10),
+            style: TextStyle(color: Colors.black, fontSize: 15),
           ),
+          SizedBox(height: 30,),
+          Row(
+            children: [
+              SizedBox(width: 20,),
+              Text(
+                "$i1",
+                style: TextStyle(color: Colors.black, fontSize: 25),
+              ),
+            ],
+          ),
+          Row(
+            children: [
+              SizedBox(width: 18,),
+              Icon(Icons.star,color: Colors.amber,),
+              Icon(Icons.star,color: Colors.amber,),
+              Icon(Icons.star,color: Colors.amber,),
+              Icon(Icons.star,color: Colors.amber,),
+              Icon(Icons.star_border,color: Colors.amber,),
+            ],
+          ),
+          SizedBox(height: 30,),
+          Text("See the detail
         ],
       ),
       decoration: BoxDecoration(
