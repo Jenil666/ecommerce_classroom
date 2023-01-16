@@ -163,7 +163,7 @@ class _HomepageState extends State<Homepage> {
                   height: 70,
                   width: 70,
                   alignment: Alignment.center,
-                  child: Icon(Icons.heart_broken_outlined,color: Colors.blue,size: 40,),
+                  child: Icon(Icons.favorite_border,color: Colors.blue,size: 40,),
                   decoration: BoxDecoration(
                       color: Colors.white,
                       borderRadius: BorderRadius.circular(20)
